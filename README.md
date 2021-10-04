@@ -6,6 +6,7 @@ apt -y install python3 python3-pip nano
 pip3 install flask
 touch /opt/app.py
 
+'''
 # app.py
 import os
 from flask import Flask
@@ -18,5 +19,6 @@ def hello():
     return 'I am good, how about you?'
 if __name__ == "__main__":
     app.run()
+'''
 
 FLASK_APP=/opt/app.py flask run --host=0.0.0.0
